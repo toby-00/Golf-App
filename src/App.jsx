@@ -1,14 +1,15 @@
+import React from 'react';
 import ShotInput from './components/ShotInput';
-import RoundSummary from './components/RoundSummary';
 import ChartView from './components/ChartView';
 
-export default function App() {
+function App() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Golf Strokes Gained Tracker</h1>
+    <div className="min-h-screen bg-gray-50 p-6">
+      <h1 className="text-2xl font-bold mb-4 text-center">🏌️ Golf Strokes Gained Tracker</h1>
       <ShotInput />
-      <RoundSummary />
       <ChartView />
     </div>
   );
 }
+
+export default App;
