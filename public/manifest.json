@@ -1,0 +1,9 @@
+{
+  "name": "Golf Strokes Gained Tracker",
+  "short_name": "GolfSG",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#22c55e",
+  "icons": []
+}
