@@ -1,8 +1,14 @@
-import { strokesGainedTable } from '../data/strokesGainedTable';
+import ShotInput from './components/ShotInput';
+import RoundSummary from './components/RoundSummary';
+import ChartView from './components/ChartView';
 
-export function calculateSG(startDist, endDist, lieType, isPutt = false) {
-  const from = strokesGainedTable[lieType][startDist];
-  const to = isPutt ? strokesGainedTable.green[endDist] : strokesGainedTable['green'][3];
-  return from - to - 1;
+export default function App() {
+  return (
+    <div className="p-4">
+      <h1 className="text-2xl font-bold mb-4">Golf Strokes Gained Tracker</h1>
+      <ShotInput />
+      <RoundSummary />
+      <ChartView />
+    </div>
+  );
 }
-
