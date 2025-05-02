@@ -1,7 +1,7 @@
-npm create vite@latest golf-strokes-gained -- --template react
-cd golf-strokes-gained
-npm install
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-npm install chart.js idb
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
+export default defineConfig({
+  base: '/golf-strokes-gained/',  // If deploying to GitHub Pages, adjust accordingly
+  plugins: [react()]
+});
